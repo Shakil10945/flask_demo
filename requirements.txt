@@ -1,0 +1,5 @@
+Flask==2.3.3
+Flask-SQLAlchemy==3.0.5   # For database interactions
+Flask-WTF==1.1.1          # For form handling
+Flask-RESTful==0.3.9      # For building REST APIs
+requests==2.31.0          # For making HTTP requests

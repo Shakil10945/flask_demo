@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Flask Server",
+            "type": "shell",
+            "command": "flask",
+            "args": [
+                "run"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Install Project Dependencies",
+            "type": "shell",
+            "command": "${workspaceFolder}/venv/Scripts/pip",
+            "args": [
+                "install",
+                "-r",
+                "${workspaceFolder}/requirements.txt"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run Project Tests",
+            "type": "shell",
+            "command": "pytest",
+            "args": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}

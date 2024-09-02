@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ban.spellright",
+        "esbenp.prettier-vscode",
+        "python-test-adapter" // Example of an additional extension
+    ]
+}
